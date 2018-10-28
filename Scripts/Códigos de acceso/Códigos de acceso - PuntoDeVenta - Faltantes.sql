@@ -1,0 +1,16 @@
+INSERT INTO portal_aplicacionCodigos VALUES ('pdv-searchActRegByNum', 'Busqueda por número de registro de activación');
+UPDATE portal_menuAplicacion SET codPermiso = 'pdv-searchActRegByNum' WHERE ruta = 'portalSinges/puntoDeVenta/consulta/resgistroActivacion';
+INSERT INTO portal_aplicacionCodigos VALUES ('pdv-blkUnblkSuc', 'Bloqueo y desbloqueo de sucursal');
+UPDATE portal_menuAplicacion SET codPermiso = 'pdv-blkUnblkSuc' WHERE ruta = 'portalSinges/puntoDeVenta/consulta/sucursalPorZona';
+INSERT INTO portal_aplicacionCodigos VALUES ('pdv-cancelActivation', 'Anulación de activación');
+UPDATE portal_menuAplicacion SET codPermiso = 'pdv-cancelActivation' WHERE ruta = 'portalSinges/puntoDeVenta/devolucion/planilla';
+INSERT INTO portal_aplicacionCodigos VALUES ('pdv-activationProcess', 'Proceso de activación');
+UPDATE portal_menuAplicacion SET codPermiso = 'pdv-activationProcess' WHERE ruta = 'portalSinges/puntoDeVenta/procesoDeActivacion';
+INSERT INTO portal_aplicacionCodigos VALUES ('pdv-consultActRecp', 'Consulta de recepción activación');
+UPDATE portal_menuAplicacion SET codPermiso = 'pdv-consultActRecp' WHERE ruta = 'portalSinges/puntoDeVenta/consulta/recepcionActivacion';
+INSERT INTO portal_aplicacionCodigos VALUES ('pdv-consultActXNumMin', 'Consulta de activación por número Min');
+UPDATE portal_menuAplicacion SET codPermiso = 'pdv-consultActXNumMin' WHERE ruta = 'portalSinges/puntoDeVenta/consulta/numeroMin';
+INSERT INTO portal_aplicacionCodigos VALUES ('pdv-consultNotAct', 'Sin registro de activación');
+UPDATE portal_menuAplicacion SET codPermiso = 'pdv-consultNotAct' WHERE ruta = 'portalSinges/puntoDeVenta/consulta/factura/sinActivacion';
+INSERT INTO portal_aplicacionCodigos VALUES ('pdv-consultActXSerialNum', 'Consulta de activación por número de serie');
+UPDATE portal_menuAplicacion SET codPermiso = 'pdv-consultActXSerialNum' WHERE ruta = 'portalSinges/puntoDeVenta/consulta/movimientoSerial';

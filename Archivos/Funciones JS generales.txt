@@ -1,0 +1,201 @@
+
+/**
+ * Alerta de confirmación con callback
+ * @param {string} title Titulo
+ * @param {string} msg Mensaje
+ * @param {function} callback Callback a ajecutar 
+ */
+function alertConfirmWithCallback(title, msg, callback, callbackClose, showBtnClose, theme) {
+    
+    var callback = ( typeof msg != 'callback' ) ? callback : function(){}; 
+    var callbackClose = (typeof callbackClose !== 'undefined') ? callbackClose : function(){}; 
+    var showBtnClose = (typeof showBtnClose !== 'undefined') ? showBtnClose : true; 
+    var theme = (typeof theme !== 'undefined') ? theme : 'default'; 
+
+    if( typeof msg == 'undefined' ) {
+        msg = title;
+        title = '';
+    }
+
+    $.jAlert({
+    	'class': 'jAlerSingular',
+        'title': title,
+        'content': msg,
+        'btns': {'text':'Confirmar', 'onClick': callback },
+        closeBtn: showBtnClose, 
+        closeOnEsc: false,
+        theme: theme,
+        onClose: callbackClose
+    });
+}
+
+/**
+* Notificación satistactoria
+* @param {string} msg Mensaje a mostrar
+*/
+var alertSuccess = function(msg) {
+   $.jAlert({
+      title: 'Singes',
+      theme: 'green',
+      content: msg
+   });
+}; 
+
+/**
+* Notificación error
+* @param {string} msg Mensaje a mostrar
+*/
+var alertError = function(msg) { 
+   var msg = (typeof msg !== 'undefined') ? msg : 'Ocurrio un error en la solicitud realizada, intentelo de de nuevo, en caso de persistir contactese con el administrador'; 
+   $.jAlert({
+      title: 'Singes',
+      theme: 'red',
+      content: msg
+   });
+};
+    
+/* Optional: Overwrites javascript's built-in alert function */
+function alert(title, msg){
+	if( typeof msg == 'undefined' )
+	{
+		msg = title;
+		title = '';
+	}
+	$.jAlert({
+		'title': title,
+		'content': msg
+	});
+}
+
+/* Optional Alert shortcuts based on color */
+function showAlert(title, msg, theme)
+{
+	$.jAlert({
+		'title': title,
+		'content': msg,
+		'theme': theme
+	});		
+}
+
+function successAlert(title, msg)
+{
+	if( typeof msg == 'undefined' )
+	{
+		msg = title;
+		title = 'Success';
+	}
+
+	showAlert(title, msg, 'green');
+}
+
+function errorAlert(title, msg)
+{
+	if( typeof msg == 'undefined' )
+	{
+		msg = title;
+		title = 'Error';
+	}
+
+	showAlert(title, msg, 'red');
+}
+
+function infoAlert(title, msg)
+{
+	if( typeof msg == 'undefined' )
+	{
+		msg = title;
+		title = 'Info';
+	}
+
+	showAlert(title, msg, 'blue');
+}
+
+function warningAlert(title, msg)
+{
+	if( typeof msg == 'undefined' )
+	{
+		msg = title;
+		title = 'Warning';
+	}
+
+	showAlert(title, msg, 'yellow');
+}
+
+function blackAlert(title, msg)
+{
+	if( typeof msg == 'undefined' )
+	{
+		msg = title;
+		title = 'Warning';
+	}
+
+	showAlert(title, msg, 'black');
+}
+
+function imageAlert(img, imgWidth)
+{
+	if( typeof imgWidth == 'auto' )
+	{
+		iframeHeight = false;
+	}
+
+	$.jAlert({
+		'image': img,
+		'imageWidth': imgWidth
+	});
+}
+
+function videoAlert(video)
+{
+	$.jAlert({
+		'video': video
+	});
+}
+
+function iframeAlert(iframe, iframeHeight)
+{
+	if( typeof iframeHeight == 'undefined' )
+	{
+		iframeHeight = false;
+	}
+
+	$.jAlert({
+		'iframe': iframe,
+		'iframeHeight': iframeHeight
+	});
+}
+
+function ajaxAlert(url, onOpen)
+{
+	if( typeof onOpen == 'undefined' )
+	{
+		onOpen = function(alert){ //on open call back. Fires just after the alert has finished rendering
+				return false;
+			};
+	}
+
+	$.jAlert({
+		'ajax': url,
+		'onOpen': onOpen
+	});
+}
+
+/**
+ * Validación de respuesta 
+ * - Incluye validación de sesión 
+ * @param {json} response Respuesta petición 
+ * @returns {Boolean}
+ */
+var validateReponseJSON = function(response){
+   if(!response || (_.isEmpty(response)) || (response.status !== 200)) { 
+        var msg = (response.message) ? response.message : 'Ocurrio un error al cargar el contenido'; 
+        errorAlert(msg); 
+       
+        if(response.status === 401) { 
+           $('.signOff').click();
+           location.reload(); 
+        } 
+       return false; 
+   } 
+   return true; 
+}; 

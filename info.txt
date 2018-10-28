@@ -1,0 +1,17 @@
+/* HOSTS */
+90.218 - @MICHAELST
+90.100 - SERVER
+
+/* PORTS */
+x64 - 8080
+x32 - 80
+
+/* DATABASES */
+100.112 - castor
+100.122 - bootes
+
+/* URLS */
+www.singes.com.co 		- Singes
+www.cxr.com.co 			- PuntoRed
+servicedesk.singularcom.com.co 	- ServiceDesk
+www.singularcom.com.co 		- SingularCom

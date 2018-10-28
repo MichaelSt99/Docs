@@ -1,0 +1,82 @@
+==============================================================================================
+Menú para relacionar código de acceso a una aplicación singes
+
+#26/09/2018#
+#27/09/2018#
+
+- iPortal
+
+-- Singes..portal_menuAplicacion / Singes..portal_aplicacionCodigos --
+
+/ Se genero un menú (administrador) para asignar un código de acceso especifico a una
+aplicación de menú especifica, no se modifico el select del menú desplegable /
+==============================================================================================
+
+==============================================================================================
+Soporte de visualización de imagenes en instructivos
+
+#26/09/2018#
+#26/09/2018#
+
+- inicio-singes
+
+-- Singes..portal_bannersHome --
+
+/ Permite visualizar las imagenes de los instructivos creados como tipo "imagen" sin 
+utilizar el google docs /
+==============================================================================================
+
+==============================================================================================
+Implementación del loader y limite de carga del iframe - instructivos
+
+#24/09/2018#
+#25/09/2018#
+
+- inicio-singes
+
+-- N/A --
+
+/ Al abrir el contenido de un iframe, aparece el loader mientras dicho contenido carga,
+si luego de 10 segundos no ha cargado, se le informa al usuario la falla y se le solicita
+que lo intente de nuevo /
+==============================================================================================
+
+==============================================================================================
+Validación de acceso a funcionalidades a través de códigos de acceso
+
+#N/A#
+#25/09/2018#
+
+- iPortal
+- inventario
+- SingularcomInventario
+- PuntoDeVenta
+- SingularcomFacturación
+- logistica (claroFijo / CuadroControl / MisionesCrm)
+- Aseguramiento
+- ReporteVentas
+- digitalización
+- infraestructura
+- SingularcomClaroFijo
+- SingularcomPlanillado
+
+-- Singes..portal_aplicacionCodigos / Singes..portal_menuAplicacion --
+
+/ Funcionalidad centralizada en inicio-singes y llamada por CURL desde los demas proyectos 
+a través de la libreria ValidateAccess, utilizada en los métodos menu de los controladores/
+==============================================================================================
+
+##############################################################################################
+==============================================================================================
+Funcionalidades realizadas
+
+#Fecha inicio#
+#Fecha fin#
+
+- Proyecto(s) afectado(s)
+
+-- Tabla(s) utilizada(s) --
+
+/ Comentarios o Detalles /
+==============================================================================================
+##############################################################################################
