@@ -17,7 +17,7 @@
 *            -      @error   = Error generado por el SP *No parametrizable
 */
 
-DECLARE @numDoc VARCHAR(14) = 'C17679893' DECLARE @fecha DATE = '20/10/2018' DECLARE @usuario VARCHAR(14) = 'zplopez2'
+DECLARE @numDoc VARCHAR(14) = 'C17688479' DECLARE @fecha DATE = '23/10/2018' DECLARE @usuario VARCHAR(14) = 'yulozano'
 
 --DECLARE             @numDoc    VARCHAR(14)     = 'C17600704'
 --DECLARE             @fecha     DATE            = '22/09/2018'

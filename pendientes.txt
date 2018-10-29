@@ -6,6 +6,16 @@ Funcionalidad(es) / Proyecto(s) / Fecha inicio / Estado / Tabla(s) / Comentarios
 ======================================================================================
 
 --------------------------------------------------------------------------------------
+Funcionalidad(es): 	Administrar los familiares y tipos de familiares de un nodo
+Proyecto(s): 		singularcomComisiones
+Fecha inicio: 		19/10/2018
+Estado:			Por Merge
+Tabla(s):		Singes..com_nodoFamiliaresTipo / Singes..com_nodoFamiliares
+Comentarios:		Generar el administrador de los familiares y tipos de 
+			familiares de un nodo, en misma rama de cargos a espera de
+			estilización de Fabian.
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 Funcionalidad(es):	Administrar los cargos y sus caracteristicas para perfilar
 Proyecto(s): 		singularcomComisiones
 Fecha inicio: 		09/10/2018
@@ -40,16 +50,6 @@ Funcionalidad(es) / Proyecto(s) / Fecha registro / Tabla(s) / Comentarios
 ======================================================================================
 
 --------------------------------------------------------------------------------------
-Funcionalidad(es): 	Administrar los eventos de los nodos
-Proyecto(s): 		singularcomComisiones
-Fecha registro: 	01/10/2018
-Tabla(s):		Singes..com_eventosRel / Singes..com_eventos
-			Singes..com_eventosTipo / Singes..com_eventosTipoArea
-			Singes..com_eventosAdjuntos / Singes..com_eventosTipoAplica
-Comentarios:		Realizar el administrador para los eventos de los nodos pero
-			teniendo en cuenta que tambien funcionara para los grupos.
---------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------
 Funcionalidad(es): 	Administrar el historico de los nodos
 Proyecto(s): 		singularcomComisiones
 Fecha registro: 	01/10/2018
@@ -77,10 +77,13 @@ Funcionalidad(es) / Proyecto(s) / Fecha inicio / Tabla(s) / Comentarios
 ======================================================================================
 
 --------------------------------------------------------------------------------------
-Funcionalidad(es): 	Administrar los familiares y tipos de familiares de un nodo
+Funcionalidad(es): 	Administrar los eventos de los nodos
 Proyecto(s): 		singularcomComisiones
-Fecha inicio: 		19/10/2018
-Tabla(s):		Singes..com_nodoFamiliaresTipo / Singes..com_nodoFamiliares
-Comentarios:		Generar el administrador de los familiares y tipos de 
-			familiares de un nodo.
+Fecha inicio: 		23/10/2018
+Tabla(s):		Singes..com_eventosRel / Singes..com_eventos
+			Singes..com_eventosTipo / Singes..com_eventosTipoArea
+			Singes..com_eventosAdjuntos / Singes..com_eventosTipoAplica
+Comentarios:		Realizar el administrador para los eventos de los nodos pero
+			teniendo en cuenta que tambien funcionara para los grupos, 
+			en misma rama de cargos y familiares.
 --------------------------------------------------------------------------------------

@@ -4,6 +4,10 @@ CREATE TABLE com_integraciones(
 	descripcion VARCHAR(50) NOT NULL,
 	usuarioCreacion VARCHAR(15) NOT NULL,
 	fechaCreacion DATETIME NOT NULL DEFAULT(GETDATE()),
+	ipCreacion VARCHAR(20) NOT NULL,
+	usuarioModificacion VARCHAR(15) NULL,
+	fechaModificacion DATETIME NULL,
+	ipModificacion VARCHAR(20) NULL,
 	eliminado BIT NOT NULL DEFAULT(1)
 );
 
@@ -15,6 +19,12 @@ CREATE TABLE com_integracionesRel(
 	idIntegracion INT NOT NULL,
 	codigo VARCHAR(50) NULL,
 	contrasena VARCHAR(100) NULL,
+	usuarioCreacion VARCHAR(15) NOT NULL,
+	fechaCreacion DATETIME NOT NULL DEFAULT(GETDATE()),
+	ipCreacion VARCHAR(20) NOT NULL,
+	usuarioModificacion VARCHAR(15) NULL,
+	fechaModificacion DATETIME NULL,
+	ipModificacion VARCHAR(20) NULL,
 	eliminado BIT NOT NULL DEFAULT(1)
 );
 
