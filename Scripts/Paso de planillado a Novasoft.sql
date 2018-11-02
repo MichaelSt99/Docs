@@ -17,12 +17,10 @@
 *            -      @error   = Error generado por el SP *No parametrizable
 */
 
-DECLARE @numDoc VARCHAR(14) = 'C17688479' DECLARE @fecha DATE = '23/10/2018' DECLARE @usuario VARCHAR(14) = 'yulozano'
-
---DECLARE             @numDoc    VARCHAR(14)     = 'C17600704'
---DECLARE             @fecha     DATE            = '22/09/2018'
---DECLARE             @usuario   VARCHAR(14)     = 'zplopez2'
-DECLARE             @perDoc    VARCHAR(2)      = '10'
+DECLARE             @numDoc    VARCHAR(14)     = 'C17600704'
+DECLARE             @fecha     DATE            = '22/09/2018'
+DECLARE             @usuario   VARCHAR(14)     = 'zplopez2'
+DECLARE             @perDoc    VARCHAR(2)      = '11'
 DECLARE             @anoDoc    VARCHAR(4)      = '2018'
 DECLARE             @aplica    VARCHAR(4)      = 'CNT'
 DECLARE             @tipDoc    VARCHAR(3)      = '252'
