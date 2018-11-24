@@ -14,3 +14,20 @@ WHERE obj.name = @table
 ORDER BY TABLA_ORIGEN, TABLA_REFERENCIA;
 
 /* =========================================================================================================== */
+
+/* =========================================================================================================== */
+/* CONSULTAR COLUMNA EN TODAS LAS TABLAS */
+
+DECLARE @column VARCHAR(50) = '';
+
+SELECT	SYSOBJECTS.name AS table_name, 
+		SYSCOLUMNS.name AS column_name, 
+		SYSTYPES.name AS datatype, 
+		SYSCOLUMNS.LENGTH AS LENGTH
+FROM SYSOBJECTS 
+INNER JOIN SYSCOLUMNS ON SYSOBJECTS.id = SYSCOLUMNS.id 
+INNER JOIN SYSTYPES ON SYSCOLUMNS.xtype = SYSTYPES.xtype
+WHERE (SYSOBJECTS.xtype = 'U') AND (UPPER(SYSCOLUMNS.name) LIKE UPPER(@column))
+ORDER BY SYSOBJECTS.name, SYSCOLUMNS.colid;
+
+/* =========================================================================================================== */

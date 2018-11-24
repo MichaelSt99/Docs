@@ -26,4 +26,5 @@ WHERE nc.contrasena IS NOT NULL;
 
 /* PASO DE DATOS SISUSUARIOS => INFOPERSONAL */
 UPDATE ni SET ni.sexo = su.sexo, ni.correo = su.email
+
 FROM Singes..com_nodoInfoPersonal ni INNER JOIN Singes..portal_sisUsuarios su ON su.cedula = ni.codigoNodo;

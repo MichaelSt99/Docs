@@ -1,4 +1,63 @@
 ==============================================================================================
+Actualizar las imagenes de los instructivos y mostrar vistas
+
+#20/11/2018#
+#21/11/2018#
+
+- inicio-singes
+
+-- Singes..portal_bannersHome / Singes..portal_bannersCategorias
+	Singes..portal_bannersVisualizaciones / Singes..portal_bannersCategoriasRel --
+
+/ Se modifico vista de los instructivos agregando tab para banners y tabla, modificando 
+las imagenes por defecto según la cátegoria y mostrando el número de visualizaciones de cada
+instructivo /
+==============================================================================================
+
+==============================================================================================
+Controlar el log de ingresos huella en detalles - nodo
+
+#20/11/2018#
+#20/11/2018#
+
+- gestionAdmin
+
+-- Singes..com_nodo / Singes..ing_registro_ingresos --
+
+/ Muestra el log de ingresos con huella del nodo en su respectiva vista de detalles /
+==============================================================================================
+
+==============================================================================================
+Ingreso y seguimiento de incidencias en servicedesk
+
+#14/11/2018#
+#19/11/2018#
+
+- singularcomTickets
+
+-- tick_tickets / tick_tipo / tick_permisos / tick_ticketestados --
+
+/ Se agrego un nuevo tipo de ticket (incidencia) para el control de las incidencias
+asignandole permisos a soporte para su creación, todo con el objetivo de hacer un seguimiento
+a todas las caidas y fallas que se presenten en todas las plataformas /
+==============================================================================================
+
+==============================================================================================
+Administrar los planes con sus banners de ayudaventas
+
+#19/10/2018#
+#N/A#
+
+- iPortal
+
+-- Singes..inv_planes / Singes..com_tip_producto / Singes..inv_planesBanners
+
+/ Realizar el administrador para los planes y que permita visualizar sus respectivos 
+banners y subirlos a amazon realizado junto con Camilo, ha espera de que camilo acabe
+para validar en real /
+==============================================================================================
+
+==============================================================================================
 Menú para relacionar código de acceso a una aplicación singes
 
 #26/09/2018#

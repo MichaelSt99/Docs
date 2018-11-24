@@ -5,43 +5,6 @@ Funcionalidad(es) / Proyecto(s) / Fecha inicio / Estado / Tabla(s) / Comentarios
 ======================================================================================
 ======================================================================================
 
---------------------------------------------------------------------------------------
-Funcionalidad(es): 	Administrar los familiares y tipos de familiares de un nodo
-Proyecto(s): 		singularcomComisiones
-Fecha inicio: 		19/10/2018
-Estado:			Por Merge
-Tabla(s):		Singes..com_nodoFamiliaresTipo / Singes..com_nodoFamiliares
-Comentarios:		Generar el administrador de los familiares y tipos de 
-			familiares de un nodo, en misma rama de cargos a espera de
-			estilización de Fabian.
---------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------
-Funcionalidad(es):	Administrar los cargos y sus caracteristicas para perfilar
-Proyecto(s): 		singularcomComisiones
-Fecha inicio: 		09/10/2018
-Estado: 		Por Merge
-Tabla(s): 		Singes..com_nodoCargo / Singes..com_nodoCargoCaracteristicas
-			Singes..com_nodoCaracteristicas
-			Singes..com_nodoCaracteristicasTipo
-Comentarios:		Realizar el administrador para los cargos y tambien para sus
-			funciones y caracteristicas para perfilamiento - falta que
-			Fabian valide y ajuste las vistas para subirlo, el ajuste para
-			agregar el cargo al nodo desde administrador se hace en la
-			implementación del nuevo modelo de nodos al final.
---------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------
-Funcionalidad(es): 	Administrar los planes con sus banners de ayudaventas	
-Proyecto(s): 		iPortal
-Fecha inicio: 		19/10/2018
-Estado: 		Por Merge
-Tabla(s): 		Singes..inv_planes / Singes..com_tip_producto
-			Singes..inv_planesBanners
-Comentarios: 		Realizar el administrador para los planes y que permita
-			visualizar sus respectivos banners y subirlos a amazon
-			realizado junto con Camilo, ha espera de que camilo acabe
-			para validar en real.
---------------------------------------------------------------------------------------
-
 ======================================================================================
 ####################################  POR INICIAR ####################################
 ======================================================================================

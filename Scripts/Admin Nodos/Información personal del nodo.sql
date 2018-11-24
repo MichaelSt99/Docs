@@ -17,7 +17,7 @@ CREATE TABLE com_nodoEstadosCiviles(
 /* INFORMACIÓN PERSONAL DEL NODO */
 CREATE TABLE com_nodoInfoPersonal(
 	codigoNodo VARCHAR(12) PRIMARY KEY NOT NULL,
-	correo VARCHAR(100) NOT NULL,
+	correo VARCHAR(100) NULL,
 	telefono VARCHAR(7) NULL,
 	celular VARCHAR(10) NULL,
 	direccion VARCHAR(100) NULL,
@@ -37,6 +37,6 @@ CREATE TABLE com_nodoInfoPersonal(
 	tallaZapatos VARCHAR(5) NULL
 );
 
-ALTER TABLE com_nodoInfoPersonal ADD FOREIGN KEY (codigoNodo) REFERENCES com_nodo(codigo);
+ALTER TABLE com_nodoInfoPersonal ADD FOREIGN KEY (codigoNodo) REFERENCES com_nodoComisiones(codigo);
 ALTER TABLE com_nodoInfoPersonal ADD FOREIGN KEY (idEps) REFERENCES com_nodoEps(id);
 ALTER TABLE com_nodoInfoPersonal ADD FOREIGN KEY (idEstadoCivil) REFERENCES com_nodoEstadosCiviles(id);

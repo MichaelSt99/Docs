@@ -2,16 +2,25 @@
 90.218 - @MICHAELST
 90.100 - SERVER
 
-/* PORTS */
+/* PUERTOS */
 x64 - 8080
 x32 - 80
 
-/* DATABASES */
-100.112 - castor
-100.122 - bootes
+/* BASES DE DATOS */
+100.112 	- castor
+100.122 	- bootes
+100.115:3306 	- servicedesk
 
-/* URLS */
+/* RUTAS */
 www.singes.com.co 		- Singes
-www.cxr.com.co 			- PuntoRed
+www.cxr.com.co 			- Conexred PuntoRed
+portal.puntored.co		- Portal PuntoRed
 servicedesk.singularcom.com.co 	- ServiceDesk
 www.singularcom.com.co 		- SingularCom
+capacitacion.singes.com.co      - Capacitación (100.83)
+
+/* CREDENCIALES */
+castor 		- usu_web_sql 		- Singularcom2057645
+draco/bootes 	- misavila		- D3s4s1ng
+servicedesk	- root			- gq%=#t]q3bA}d3]UY}@q]i
+windows		- desarrollador2	- Singularcom1
